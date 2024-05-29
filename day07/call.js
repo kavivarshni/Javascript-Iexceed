@@ -2,18 +2,13 @@ student={
      name:"Kavivarshni",
      role:"UI/UX developer"
 };
-parent={
-    fathername:"Muthurathinam",
-    mothername:"Sumathi"
-}
+
 employee={
     name:"kani",
-    display:function()
+    display:function(...args)
     {
         console.log(this.name);
         console.log(this.role);
-        console.log(this.fathername);
-        console.log(this.mothername);
     }
 };
-employee.display.apply([student,parent]);
+employee.display.call(student);

@@ -8,7 +8,7 @@ const employee={
     state:"Tamil Nadu"
 }
 console.log(employee);
-emp1=Object.entries(employee);      //Converted to Object
+emp1=Object.entries(employee);      //Converted to Array
 console.log(emp1);
 
 //Object.fromentries --> To convert TwodArray to object
